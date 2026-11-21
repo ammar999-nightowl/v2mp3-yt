@@ -38,6 +38,12 @@ void interface()
   {
     break;
   }
+  if (url == "help")
+  {
+    cout << "input the url to download songs via youtube\n";
+    cout << "thats it. who needs help for that ?\n";
+    continue;
+  }
   cmd = "yt-dlp -x --audio-format mp3 --audio-quality 0 " + url;
   system(cmd.c_str());
  }
